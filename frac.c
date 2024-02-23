@@ -113,7 +113,6 @@ int main(void) {
 		}
 
 		ClearBackground(BLACK);
-		DrawFPS(0, 0);
 		BeginDrawing();
 		for (size_t i = 0; i < draw_recs.count; i++) {
 			Rectangle rec = draw_recs.items[i];
