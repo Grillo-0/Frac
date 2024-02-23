@@ -1,5 +1,9 @@
 # Frac
 
+<p align=center>
+  <img src="./frac.png">
+</p>
+
 A simple program that draw a [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle)
 
 # Dependencies
