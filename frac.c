@@ -25,15 +25,12 @@
     } while (0)
 
 void draw_triangle_at_rec(const Rectangle rec) {
-	// printf("+%f+%f:%fx%f\n", rec.x, rec.y, rec.width, rec.height);
-	DrawRectangleLinesEx(rec, 1.0, RED);
-	// DrawCircleLines(rec.x + rec.width / 2, rec.y + rec.height / 2, rec.width / 2, RAYWHITE);
-	// DrawTriangleLines(
-	// 	(Vector2){rec.x, rec.y + rec.height},
-	// 	(Vector2){rec.x + rec.width / 2.0, rec.y},
-	// 	(Vector2){rec.x + rec.width, rec.y + rec.height},
-	// 	RAYWHITE
-	// );
+	DrawTriangleLines(
+		(Vector2){rec.x, rec.y + rec.height},
+		(Vector2){rec.x + rec.width / 2.0, rec.y},
+		(Vector2){rec.x + rec.width, rec.y + rec.height},
+		RAYWHITE
+	);
 }
 
 void divide_rec(const Rectangle rec, Rectangle *out_recs) {
